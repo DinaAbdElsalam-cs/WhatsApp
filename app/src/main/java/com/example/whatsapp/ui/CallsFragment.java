@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -45,11 +46,17 @@ public class CallsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setupcallsRecycler(view);
     }
 
     private void setupcallsRecycler(View view)
     {
         call.add(new CallsModel(R.drawable.image15,"Mamy"));
         call.add(new CallsModel(R.drawable.image7,"My Bro"));
+
+        callRecycler=view.findViewById(R.id.call_recycler);
+        callsAdapter=new CallsAdapter(call);
+        callRecycler.setAdapter(callsAdapter);
+        callRecycler.setLayoutManager(new LinearLayoutManager(requireContext()));
     }
 }
