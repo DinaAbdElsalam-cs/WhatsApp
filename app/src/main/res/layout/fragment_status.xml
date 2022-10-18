@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.StatusFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/status_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_status_layout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_btn2"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/camera_icon"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/_15sdp"
+        android:backgroundTint="#0C8A7E"
+        app:tint="@color/white"
+        />
+
+</FrameLayout>

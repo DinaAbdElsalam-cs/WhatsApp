@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/_3sdp"
+    android:paddingHorizontal="@dimen/_7sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage_calls"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/black"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/username_calls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/userImage_calls"
+        app:layout_constraintBottom_toBottomOf="@id/userImage_calls"
+        app:layout_constraintStart_toEndOf="@id/userImage_calls"
+        tools:text="ghghgygb nh"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/username_calls"
+        app:layout_constraintBottom_toBottomOf="@id/username_calls"
+        android:drawableEnd="@drawable/call_icon"
+        android:layout_marginEnd="@dimen/_10sdp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/user_time_calls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/username_calls"
+        app:layout_constraintStart_toEndOf="@id/userImage_calls"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        android:drawableStart="@drawable/in_icon"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@id/userImage_calls"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="#bebebe"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

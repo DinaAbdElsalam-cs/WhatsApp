@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login_Activity"
+   >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_guidline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"/>
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_guidline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/images2"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_image"
+        android:layout_margin="@dimen/_30sdp"
+        android:hint="@string/phone_number"
+        android:drawableStart="@drawable/phone_icon"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_code_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/phone_number"
+        android:text="@string/send_code"
+        android:backgroundTint="#4CC552"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_50sdp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/send_code_btn"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:hint="@string/write"
+        android:drawableStart="@drawable/write_icon"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/code"
+        android:text="@string/Verify"
+        android:backgroundTint="#4CC552"
+        app:cornerRadius="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@id/verify_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

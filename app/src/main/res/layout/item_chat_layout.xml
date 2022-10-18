@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:paddingVertical="@dimen/_3sdp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/black"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/profile_image"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+        app:layout_constraintStart_toEndOf="@id/profile_image"
+        android:layout_marginStart="@dimen/_5sdp"
+        tools:text="dina"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/chat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/profile_image"
+        app:layout_constraintTop_toBottomOf="@id/user_name"
+        android:layout_marginStart="@dimen/_5sdp"
+        tools:text="hi"
+        android:textColor="#0E8EF4"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="italic"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        android:background="#BCB9B9"
+        android:layout_marginTop="@dimen/_3sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
