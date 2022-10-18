@@ -64,6 +64,9 @@ public class ChatFragment extends Fragment {
         users.add(new ChatModel(R.drawable.image6,"Mai","welcome"));
         users.add(new ChatModel(R.drawable.image7,"Hager","Hi"));
         users.add(new ChatModel(R.drawable.image15,"My Bro","Hello "));
+        users.add(new ChatModel(R.drawable.image11,"Mamy","Hi"));
+        users.add(new ChatModel(R.drawable.image8,"Samaka","Hello"));
+        users.add(new ChatModel(R.drawable.image12,"Soso","welcome"));
 
         chatRecycler=view.findViewById(R.id.chat_recycler);
         chatAdapter=new ChatAdapter(users);
