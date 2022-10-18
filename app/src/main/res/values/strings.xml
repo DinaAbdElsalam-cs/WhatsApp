@@ -19,4 +19,6 @@
     <string name="new_broadcast">New broadcast</string>
     <string name="group">New group</string>
     <string name="status_privacy">Status privacy</string>
+    <string name="setting">Settings</string>
+    <string name="clear">Clear call log</string>
 </resources>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <item
-        android:id="@+id/status_privacy"
-        android:title="@string/status_privacy"/>
+        android:id="@+id/clear"
+        android:title="@string/clear"/>
     <item
-        android:id="@+id/settings2"
-        android:title="Settings"/>
+        android:id="@+id/settings3"
+        android:title="@string/setting"/>
     <item
         android:id="@+id/search"
         android:title="@string/search"
